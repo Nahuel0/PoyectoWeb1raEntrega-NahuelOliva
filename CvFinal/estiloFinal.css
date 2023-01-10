@@ -1,0 +1,88 @@
+
+
+
+.secction{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    border-radius: 24px;
+    background: linear-gradient(#97c9d8,rgb(92, 6, 88));
+    margin: 30px;
+}
+
+details >p{
+    display: flex;
+    flex-direction: column;
+
+    font-size: 25px;
+    border:1px solid black;
+    border-radius: 24px;
+    height: 100px;
+    text-align: center;
+    justify-content: center;
+    word-wrap: break-word;
+
+}
+
+details >h2{
+    background-color: rgb(231, 194, 139);
+    height: 32px;
+    text-align: center;
+    border-radius: 24px;
+}
+
+.cont-imagen-perfil{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.imagen-perfil{
+    border: 5px solid black;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    align-self: center;
+}
+
+.informacion-personal , .informacion-contacto{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    margin: 0;
+    padding: 10px;
+    border: 1px solid;
+    margin: 10px;
+    border-radius: 32px;
+}
+
+.informacion-titulos, .informacion-trabajos{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 1px solid;
+    border-radius: 32px;
+    margin: 10px;
+    text-align: center;
+}
+summary {
+    text-align: center;
+}
+
+.ver-info-img{
+    background-color: rgb(238, 236, 209);
+    width: 50px;
+    height: 50px;
+
+    border-radius: 24px;
+}
+
+@media(max-width:685px){
+    .informacion-personal , .informacion-contacto{
+        width: 100%;
+
+    }
+}
+
+
+

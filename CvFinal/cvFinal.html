@@ -1,0 +1,174 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Suez+One&display=swap" rel="stylesheet">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Suez+One&display=swap'); </style>
+    
+    <script src="./cvFinal.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>cv final</title>
+    
+    <link rel="shortcut icon" href="../imagenes/iconos/logo.png">
+    <link rel="stylesheet" href="./estiloFinal.css">
+    <link rel="stylesheet" href="../estilos.css">
+</head>
+<body >
+    <header class="header">
+        <img src="../imagenes/Titulo.png" alt="imagen de Curriculum" class="imagen-principal">
+        <h1>Creado Tu Curriculum Vitae</h1>
+
+    </header>
+
+    <section  class="secction">
+
+        <div class="cont-imagen-perfil">
+            
+            <img src="" alt="" id="imagen-perfil" class="imagen-perfil" >
+        </div>
+
+        <div class="informacion-personal">
+            <details>
+                <summary><img src="../imagenes/iconosFinales/Persona.png" alt="ver informacion personal" class="ver-info-img"></summary>
+                <h2>Nombre</h2>
+                <p id="nombre"></p>
+
+                <h2>Apellido</h2>
+                <p id="apellido"></p>
+
+                <h2>Edad</h2>
+                <p id="edad"></p>
+
+                <h2>Descripcion Personal</h2>
+                <p id="descripcion-personal"></p>
+            </details>
+        </div>
+        
+        <div class="informacion-contacto">
+            <details>    
+                <summary><img src="../imagenes/iconosFinales/Celular.png" alt="ver contacto" class="ver-info-img"></summary>
+                <h2>Email</h2>
+                <p id="email"></p>
+
+                <h2>Telefono</h2>
+                <p id="telefono"></p>
+
+                
+                <h2 id="h2-linkedin">Linkedin</h2>
+                <p id="linkedin"></p>
+
+                <h2 id="h2-github">Github</h2>
+                <p id="github"></p>
+
+                <h2 id="h2-instagram">Instragram</h2>
+                <p id="instagram"></p>
+            </details>
+        </div>
+
+        <div class="informacion-titulos" id="titulos">
+            <details>
+                <summary><img src="../imagenes/iconosFinales/TituloC.png" alt="ver titulo" class="ver-info-img"></summary>
+                <h2>Nivel Educacion</h2>
+                <p id="nivel-educacion"></p>
+
+                <h2>Titulo</h2>
+                <p class="titulo"></p>
+
+                <h2>Año de Inicio</h2>
+                <p class="anio-inicio"></p>
+
+                <h2>Año de Fin</h2>
+                <p class="anio-fin"></p>
+            </details>    
+        </div>
+        <div class="informacion-titulos" id="titulos-dos">
+            <details>
+                <summary><img src="../imagenes/iconosFinales/TituloC.png" alt="ver titulo" class="ver-info-img"></summary>
+                <h2>Nivel Educacion</h2>
+                <p id="nivel-educacion-dos"></p>
+
+                <h2>Titulo</h2>
+                <p class="titulo"></p>
+
+                <h2>Año de Inicio</h2>
+                <p class="anio-inicio"></p>
+
+                <h2>Año de Fin</h2>
+                <p class="anio-fin"></p>
+            </details>
+        </div>
+
+        <div class="informacion-trabajos" id="trabajos">
+            <details>    
+                <summary><img src="../imagenes/iconosFinales/Trabajo.png" alt="ver trabajos" class="ver-info-img"></summary>
+                <h2>Nombre de la Empresa</h2>
+                <p class="nombre-empresa"></p>
+
+                <h2>Rol en la Empresa</h2>
+                <p class="rol-empresa"></p>
+
+                <h2>Telefono para Validacion</h2>
+                <p class="tel-validacion"></p>
+
+                <h2>Cantidad de años de trabajos</h2>
+                <p class="cant-anios"></p>
+            </details>        
+        </div>
+
+        <div class="informacion-trabajos" id="trabajos-dos">
+            <details>    
+                <summary><img src="../imagenes/iconosFinales/Trabajo.png" alt="ver trabajos" class="ver-info-img"></summary>
+                <h2>Nombre de la Empresa</h2>
+                <p class="nombre-empresa"></p>
+
+                <h2>Rol en la Empresa</h2>
+                <p class="rol-empresa"></p>
+
+                <h2>Telefono para Validacion</h2>
+                <p class="tel-validacion"></p>
+
+                <h2>Cantidad de años de trabajos</h2>
+                <p class="cant-anios"></p>
+            </details>
+        </div>
+    </section>
+
+
+
+
+    <footer class="copyright">
+        
+        <div class="footer-flex">
+            <p> Redes </p>    
+            <a href="https://www.linkedin.com/in/nahuel-oliva-b3624b250/">
+                <img src="../imagenes/iconos/linkedin.png" alt="imagen likedin" class="imagen-pie">
+            </a>
+            <a href="https://github.com/Nahuel0">
+                <img src="../imagenes/iconos/github.png" alt="imagen github" class="imagen-pie">
+            </a>
+            <a href="https://www.instagram.com/nahue.o1/">
+                <img src="../imagenes/iconos/instragram.png" alt="imagen de instragram" class="imagen-pie">
+            </a>
+        </div>
+        
+        <div class="footer-flex">
+            <p>Contacto</p>
+            <a href="">
+                <img src="../imagenes/iconos/correo.png" alt="imagen email" class="imagen-pie">
+                
+            </a>
+            <a href="https://mail.google.com/mail/u/2/#inbox?compose=GTvVlcSHwQbRRwMFjTgrQBmhvDvWrMBBNfKQKTNzQBZSNRRrvMwbQdLRXZgpmRWbJgdTKKFRJtHXq">
+                <img src="../imagenes/iconos/WhatsApp.png" alt="imagen WhatsApp" class="imagen-pie">
+            </a>
+            <a href="https://www.facebook.com/">
+                <img src="../imagenes/iconos/facebook.png" alt="imagen de facebook" class="imagen-pie">
+            </a>
+        </div>
+        <div class="footer-flex">
+        <h2>&copy Nahuel-O-Copyright</h2>
+        </div>
+    </footer>
+</body>
+</html>

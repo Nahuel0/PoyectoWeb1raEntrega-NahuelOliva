@@ -1,0 +1,185 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Suez+One&display=swap" rel="stylesheet">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Suez+One&display=swap'); </style>
+    <link rel="stylesheet" href="./estilos.css">
+    <script src="./funcionalidad.js"></script>
+    <link rel="shortcut icon" href="./imagenes/iconos/logo.png">
+    <title>Generador Curriculum</title>
+    
+</head>
+<body >
+
+    <header class="header">
+        <img src="./imagenes/Titulo.png" alt="imagen de Curriculum" class="imagen-principal">
+        <h1>Crea tu Curriculum Vitae</h1>
+
+    </header>
+
+    <section class="barra-busqueda">
+        <a href="#imagen-perfil">Agregar Imagen de perfil
+            <img src="./imagenes/persona.webp" alt="imagen de perfil" class="imagen-ancla">
+        </a>
+        <a href="#info-personal">Agregar Informacion Personal
+            <img src="./imagenes/iconos/User (2).png"class="imagen-ancla" alt="Informacion Personal">
+        </a>
+        <a href="#info-contacto">Agregar Informacion de Contacto
+            <img src="./imagenes/iconos/contactos.png" alt="Contacto" class="imagen-ancla">
+        </a>
+        <a href="#info-titulos">Agregar Titulos
+            <img src="./imagenes/iconos/titulo.png" alt="Educacion" class="imagen-ancla">
+        </a>
+        <a href="#info-trabajos">Agregar Trabajos
+            <img src="./imagenes/iconos/work.png" alt="" class="imagen-ancla">
+        </a>
+    </section>
+
+    <section id="content-form">
+        <form class="form" id="form">
+            <fieldset class="img-personal">
+                <a name="imagen-perfil"></a>
+                <label for="get-imagen">Imagen Perfil</label>
+                <p id="input-false">Subir Foto (*)</p>
+                <input type="file" name="imagen" id="get-imagen" accept="imagen/jpg imagen/png"   >
+                <div class="circulo" id="subir-foto">
+                    <img src="./imagenes/persona.webp" alt="imagen de perfil" id="img-previsualizacion" class="imagen-perfil">
+                </div>
+            </fieldset>
+
+
+            <fieldset class="info-personal">
+                <a name="info-personal"></a>
+                <legend><h2>Informacion personal</h2><img src="./imagenes/iconos/User (2).png" class="imagen-referente" alt="Informacion Personal"></legend>    
+                <label for="get-name">Nombre </label>
+                <input id="get-name" type="text" name="name" placeholder="Ingrese su nombre aqui (*)" >
+
+                <label for="get-apellido">Apellido </label>
+                <input type="text" name="apellido" id="get-apellido" placeholder="Ingrese su Apellido Aqui (*)" >
+                
+                <label for="get-edad">Edad </label>
+                <input type="number" name="edad" id="get-edad" placeholder="Ingrese su edad (*)"  >
+
+                <label for="get-descripcionpersonal">Descripcion Personal</label>
+                <textarea name="descripcion-personal" id="get-descripcionpersonal" cols="5" rows="10" placeholder="Ingrese una breve descripcion personal (*)" ></textarea>
+                
+            </fieldset>
+            
+            <fieldset class="info-contacto">
+                <a name="info-contacto"></a>
+                <legend><h2>Tu Contacto</h2><img src="./imagenes/iconos/contactos.png" alt="Contacto" class="imagen-referente"></legend>                
+                <label for="get-correo" >Correo Electronico</label>
+                <input type="email" name="correo" id="get-correo"  placeholder="ejemplo@gmail.com (*)" >
+ 
+                <label for="get-telefono">Telefono</label>
+                <input type="number" name="telefono" id="get-telefono" placeholder="xxx-x-xxxxxx (*)" >
+            
+
+                <label for="get-linkedin">Linkedin</label>
+                <input type="url" name="linkedin" id="get-linkedin" placeholder="https://www.linkedin.com/in/nahuel-oliva-b3624b250/">
+
+                <label for="get-github">Github</label>
+                <input type="url" name="github" id="get-github" placeholder="https://github.com/Nahuel0">
+                
+                <label for="get-instagram">instagram</label>
+                <input type="url" name="instagram" id="get-instagram" placeholder="https://instragram.con/ejemplo">
+            
+
+            </fieldset>
+            <fieldset class="info-titulos">
+                <a name="info-titulos"></a>
+                <legend><h2>Tu Formacion</h2><img src="./imagenes/iconos/titulo.png" alt="Educacion" class="imagen-referente"></legend>
+                <fieldset class="nivel-educacion">
+                    <legend>Nivel de Educacion Alcanzado</legend>
+                    <input type="radio" name="educacion" value="1" class="check" checked >Primario;
+                    <input type="radio" name="educacion" value="2" class="check">Secundario;
+                    <input type="radio" name="educacion" value="3" class="check">Terciario;
+                </fieldset>
+                
+                <label for="get-titulo">Titulo</label>
+                <input type="text" name="titulo" id="get-titulo">
+                <label for="get-inicio">Año inicio</label>
+                <input type="number" name="inicio" id="get-inicio">
+                <label for="get-fin">Año de finalizacion</label>
+                <input type="number" name="fin" id="get-fin">
+                
+                <input type="button" id="agregar-titulo" value="+">
+            </fieldset>
+
+            <fieldset class="info-trabajos">
+                <a name="info-trabajos"></a>
+                <legend><h2>Tu Experiencia Laboral</h2><img src="./imagenes/iconos/work.png" alt="" class="imagen-referente"></legend>
+                <label for="get-nombre-empresa">Nombre de la empresa</label>
+                <input type="text" name="nombre-empresa" id="get-nombre-empresa">
+                <label for="get-rol">Rol que realizo en la empresa</label>
+                <textarea name="rol" id="get-rol" cols="5" rows="10"></textarea>
+                <label for="get-contacto">Numero Telefono Para Comprobacion</label>
+                <input type="number" name="numero-empresa" id="get-contacto">
+                <label for="get-anios-trabajo">Cantidad de años de trabajo</label>
+                <input type="number" name="anios-trabajo" id="get-anios-trabajo">
+            
+                <input type="button" id="agregar-trabajo" value="+">
+            </fieldset>
+
+
+            <fieldset class="buttons">
+                <legend>Terminar/Reiniciar</legend>
+                <a  id="terminar-form">
+                    <input type="button"class="boton"  value="Enviar">
+                </a>
+                <input type="reset" class="boton">
+            </fieldset>
+
+            
+        </form>
+    </section>
+
+    
+    <section class="modal-container">
+        <div class="modal">
+            <h2>Crea tu primer CV</h2>
+            <img src="./imagenes/img-modal.webp" alt="imagen de un cv animado" class="imagen-modal">
+            <p>Para que las empresas se fijen en ti!</p>
+            
+            <button id="modal-close">Empezar!</button>
+        </div>
+    </section>
+
+    <footer class="copyright">
+        
+        <div class="footer-flex">
+            <p> Redes </p>    
+            <a href="https://www.linkedin.com/in/nahuel-oliva-b3624b250/">
+                <img src="./imagenes/iconos/linkedin.png" alt="imagen likedin" class="imagen-pie">
+            </a>
+            <a href="https://github.com/Nahuel0">
+                <img src="./imagenes/iconos/github.png" alt="imagen github" class="imagen-pie">
+            </a>
+            <a href="https://www.instagram.com/nahue.o1/">
+                <img src="./imagenes/iconos/instragram.png" alt="imagen de instragram" class="imagen-pie">
+            </a>
+        </div>
+        
+        <div class="footer-flex">
+            <p>Contacto</p>
+            <a href="">
+                <img src="./imagenes/iconos/correo.png" alt="imagen email" class="imagen-pie">
+                
+            </a>
+            <a href="https://mail.google.com/mail/u/2/#inbox?compose=GTvVlcSHwQbRRwMFjTgrQBmhvDvWrMBBNfKQKTNzQBZSNRRrvMwbQdLRXZgpmRWbJgdTKKFRJtHXq">
+                <img src="./imagenes/iconos/WhatsApp.png" alt="imagen WhatsApp" class="imagen-pie">
+            </a>
+            <a href="https://www.facebook.com/">
+                <img src="./imagenes/iconos/facebook.png" alt="imagen de facebook" class="imagen-pie">
+            </a>
+        </div>
+        <div class="footer-flex">
+        <h2>&copy Nahuel-O-Copyright</h2>
+        </div>
+    </footer>
+
+
+</body>
+</html>
